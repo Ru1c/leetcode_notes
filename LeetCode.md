@@ -3,6 +3,9 @@ Given an array of integers nums and an integer target, return indices of the two
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 
+
+For an example, suppose the array is like A = [2, 8, 12, 15], and the target sum is 20. Then it will return indices 1 and 2, as A[1] + A[2] = 20.
+
 1. prepare a null dict
 2. use remain=20-first value in array  to check the remaining values
 3. fulfill the dict: array values as dict indicators; array indicators as dict values
