@@ -1,2 +1,2 @@
 
-To record and self-monitoring
+recording and self-monitoring
