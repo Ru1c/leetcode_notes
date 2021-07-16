@@ -1,1 +1,2 @@
-# py_leetcode
+
+To record and self-monitoring
