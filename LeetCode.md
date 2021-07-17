@@ -33,4 +33,36 @@ ob1 = Solution()
 print(ob1.twoSum(input_list, 20))   
 
 ```
+
+# Reverse Interger
+What is the meaning of “int(a[::-1])” in Python?
+
+Assuming a is a string. The Slice notation in python has the syntax :
+
+list[<start>:<stop>:<step>]
+
+When you do a[::-1], it starts from the end towards the first taking each element, so the a is reversed.
+This is applicable for lists/tuples as well.
+
+Example below:
+
+>>> a = '1234'
+>>> a[::-1]
+'4321'
+That just gives you back the string. Then you could convert it to int.
+
+```
+class Solution(object):
+    def reverse(self,x):
+        output = int(str(abs(x))[::-1])
+        if output < 2**31:
+            if x >= 0:
+                return output
+            else:
+                return -output
+        else:
+            return 0  
+
+```
+    
     
