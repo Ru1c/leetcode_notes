@@ -1,4 +1,4 @@
-# Two Sum
+# 1. Two Sum
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
@@ -28,7 +28,7 @@ print(ob1.twoSum(input_list, 20))
 
 ```
 
-# Reverse Interger
+# 7. Reverse Interger
 What is the meaning of “int(a[::-1])” in Python?
 
 https://stackoverflow.com/questions/31633635/what-is-the-meaning-of-inta-1-in-python/31633656
