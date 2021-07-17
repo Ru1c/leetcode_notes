@@ -30,19 +30,23 @@ print(ob1.twoSum(input_list, 20))
 
 # Reverse Interger
 What is the meaning of “int(a[::-1])” in Python?
+https://stackoverflow.com/questions/31633635/what-is-the-meaning-of-inta-1-in-python/31633656
 
 Assuming a is a string. The Slice notation in python has the syntax :
 
-list[<start>:<stop>:<step>]
+list[start:stop:step]
 
-When you do a[::-1], it starts from the end towards the first taking each element, so the a is reversed.
+When you do a[ : : -1], it starts from the end towards the first taking each element, so the a is reversed.
 This is applicable for lists/tuples as well.
 
 Example below:
 
->>> a = '1234'
->>> a[::-1]
+a = '1234'
+
+a[::-1]
+
 '4321'
+
 That just gives you back the string. Then you could convert it to int.
 
 ```
