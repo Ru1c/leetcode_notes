@@ -30,6 +30,7 @@ print(ob1.twoSum(input_list, 20))
 
 # Reverse Interger
 What is the meaning of “int(a[::-1])” in Python?
+
 https://stackoverflow.com/questions/31633635/what-is-the-meaning-of-inta-1-in-python/31633656
 
 Assuming a is a string. The Slice notation in python has the syntax :
