@@ -64,4 +64,46 @@ class Solution(object):
 
 ```
     
-    
+#   9. Palindrome Number
+The 1st idea that comes to mind is to convert the number into string, and check if the string is a palindrome, but this would require extra non-constant space for creating the string which is not allowed by the problem description.
+
+```
+
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+
+        return str(x) == str(x)[::-1]
+        
+```
+
+The 2nd idea would be reverting the number itself, and then compare the number with original number, if they are the same, then the number is a palindrome. 
+
+```
+
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        num=0
+        if x>0 and x<= 2^31-1:
+            a=x
+            while (a!=0) :
+                rev=a%10
+                num=num*10+rev
+                a=int(a/10)
+            if num==x:
+                return 'true'
+            else:
+                return 'false'
+        elif x==0 :
+            return 'true'
+        else:
+            return 'false'
+            
+```
