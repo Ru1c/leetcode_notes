@@ -132,3 +132,40 @@ class Solution(object):
         return sum     
 
 ```
+
+
+# 14. Longest Common Prefix
+
+https://www.youtube.com/watch?v=cGQez9SiScw
+
+The 1st idea :
+    _1_ use TRY-Except to judge if all the strings got same alphabet in the same string position. 
+    _2_  got same (len(sets) = 1), then output the alphabet in a null string. 
+    _3_  not (len(sets) > 1), then break the loop.
+    _4_  the result un-null string.
+
+```
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        result=""
+        i=0
+        
+        while True:
+            try:
+                sets= set(string[i] for string in strs)
+                print('sets', sets).  # check the distinct different alphabet
+                if len(sets) == 1:
+                    result += sets.pop()
+                    i += 1
+                else:
+                    break
+            except Exception as e:
+                break
+        
+        return result
+```
+
