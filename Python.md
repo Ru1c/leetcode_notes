@@ -169,8 +169,8 @@ class Solution(object):
         return result
 ```
 
-* pop() 
-The pop() method removes an arbitrary element from the set and returns the element removed.
-The pop() method returns an arbitrary (random) element from the set. Also, the set is updated and will not contain the element (which is returned).
+pop() 
+* The pop() method removes an arbitrary element from the set and returns the element removed.
+* The pop() method returns an arbitrary (random) element from the set. Also, the set is updated and will not contain the element (which is returned).
 
-If the set is empty, TypeError exception is raised.
+* If the set is empty, TypeError exception is raised.
