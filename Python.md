@@ -137,6 +137,8 @@ class Solution(object):
 # 14. Longest Common Prefix
 
 https://www.youtube.com/watch?v=cGQez9SiScw
+https://blog.csdn.net/fuxuemingzhu/article/details/77561186
+
 
 The 1st idea :
     _1_ use TRY-Except to judge if all the strings got same alphabet in the same string position. 
@@ -174,3 +176,5 @@ pop()
 * The pop() method returns an arbitrary (random) element from the set. Also, the set is updated and will not contain the element (which is returned).
 
 * If the set is empty, TypeError exception is raised.
+
+
