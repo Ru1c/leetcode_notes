@@ -137,6 +137,7 @@ class Solution(object):
 # 14. Longest Common Prefix
 
 https://www.youtube.com/watch?v=cGQez9SiScw
+
 https://blog.csdn.net/fuxuemingzhu/article/details/77561186
 
 
