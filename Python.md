@@ -142,14 +142,10 @@ https://blog.csdn.net/fuxuemingzhu/article/details/77561186
 
 
 The 1st idea :
-
-    _1_ use TRY-Except to judge if all the strings got same alphabet in the same string position. 
-    
-    _2_  got same (len(sets) = 1), then output the alphabet in a null string. 
-    
-    _3_  not (len(sets) > 1), then break the loop.
-    
-    _4_  the result un-null string.
+      1_  use TRY-Except to judge if all the strings got same alphabet in the same string position.     
+      2_  got same (len(sets) = 1), then output the alphabet in a null string.     
+      3_  not (len(sets) > 1), then break the loop.    
+      4_  the result un-null string.
 
 ```
 class Solution(object):
