@@ -168,4 +168,4 @@ class Solution(object):
         
         return result
 ```
-
+The pop() method removes an arbitrary element from the set and returns the element removed.
