@@ -218,8 +218,11 @@ break 7/23
 
 # 35. Search Insert Position 
  
+![image](https://user-images.githubusercontent.com/67846228/135516056-eb1ebbd7-5de5-4e8f-8e88-3ab9fa487ec5.png)
+
 
 ```
+
 
 class Solution(object):
     def searchInsert(self, nums, target):
