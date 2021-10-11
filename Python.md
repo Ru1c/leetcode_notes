@@ -270,3 +270,29 @@ class Solution(object):
         return result
 
 ```
+
+
+
+# 413. Arithmetic Slices 
+ 
+if make it a harder follow up question: how about change the continues subarrays to incontinoues subsets?
+
+```
+class Solution(object):
+    def numberOfArithmeticSlices(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        ans=0
+        dp=0
+        
+        for i in range(2, len(nums)):
+            if nums[i] - nums[i - 1] == nums[i - 1] - nums[i - 2]:
+                dp += 1
+                ans += dp
+            else:
+                dp = 0
+                
+        return ans
+```
