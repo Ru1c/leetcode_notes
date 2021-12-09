@@ -346,7 +346,7 @@ class Solution(object):
 reduce function
 https://www.geeksforgeeks.org/reduce-in-python/
 
-
+sol-1:
 ```
 
 class Solution(object):
@@ -358,4 +358,33 @@ class Solution(object):
         return reduce(lambda x,y: x+y, xrange(len(nums)+1)) - sum(nums)
         
         
+```
+sol-2:
+```
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if(len(nums)==0):
+            return 0
+        nums.sort()
+        for i in range(len(nums)):
+            if(i!=nums[i]):
+                return i
+        return len(nums)
+```
+
+sol-3:
+```
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        if(len(nums)==0):
+            return 0
+        nums.sort()
+        for i in range(len(nums)):
+            if(i!=nums[i]):
+                return i
+        return len(nums)
 ```
