@@ -341,3 +341,21 @@ class Solution(object):
         return global_max
             
 ```
+
+# 268. Missing Number
+reduce function
+https://www.geeksforgeeks.org/reduce-in-python/
+
+
+```
+
+class Solution(object):
+    def missingNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return reduce(lambda x,y: x+y, xrange(len(nums)+1)) - sum(nums)
+        
+        
+```
