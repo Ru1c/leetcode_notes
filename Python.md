@@ -438,3 +438,27 @@ class Solution(object):
         return sum(list(set(nums)))+sum(list(set(nums)))-sum(nums)
        
 ```
+one interesting sol is like
+```
+class Solution:
+    def singleNumber(self, nums: List[int]) -> int:
+        n=len(nums)
+        r=nums[0]
+        for i in range(1,n):
+            r = r ^ nums[i] 
+
+        return r
+        
+```
+
+explanation:-
+Let ^ be xor operator as in python 3
+
+r = 7 ^ 3 ^ 5 ^ 4 ^ 5 ^ 3 ^ 4
+
+Since XOR is associative and commutative, above
+expression can be written as:
+r = 7 ^ (3 ^ 3) ^ (4 ^ 4) ^ (5 ^ 5)
+= 7 ^ 0 ^ 0 ^ 0
+= 7 ^ 0
+= 7
