@@ -388,3 +388,25 @@ class Solution:
                 return i
         return len(nums)
 ```
+
+
+# 448. Find All Numbers Disappeared in an Array 
+
+
+I got TLE(time limit exceeded) at the first try
+```
+class Solution(object):
+    def findDisappearedNumbers(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        re = []
+        n = len(nums) 
+        lst = list(range(1,n+1))
+        for i in range(n):
+            if lst[i] not in nums:
+                re.append(lst[i])
+        return re
+            
+```
