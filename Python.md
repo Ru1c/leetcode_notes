@@ -390,7 +390,7 @@ class Solution:
 ```
 
 
-# 448. Find All Numbers Disappeared in an Array 
+# 448. Find All Numbers Disappeared in an Array
 
 
 I got TLE(time limit exceeded) at the first try
@@ -421,4 +421,20 @@ class Solution(object):
         if not nums:
             return None
         return list(set(range(1,len(nums)+1)) - set(nums))
+```
+
+
+# 136. Single Number
+
+
+I got it at the first try!
+```
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        return sum(list(set(nums)))+sum(list(set(nums)))-sum(nums)
+       
 ```
