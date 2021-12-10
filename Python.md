@@ -410,3 +410,15 @@ class Solution(object):
         return re
             
 ```
+then try to use SET to do elements-subtract
+```
+class Solution(object):
+    def findDisappearedNumbers(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        if not nums:
+            return None
+        return list(set(range(1,len(nums)+1)) - set(nums))
+```
