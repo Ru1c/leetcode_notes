@@ -475,10 +475,23 @@ Beat almost 100% python submission
 
 x = n//2 is the max number of double steps you can take
 
-y is the amount of 2 steps you are taking every turn
-n-y is the number of 1 steps you are taking every time
+y is the amount of double steps you are taking every turn
+n-y is the total seats for single or double steps you put every time
 
 The sum of all the combinations you can take for every different amount of two steps from 0 to x+1 (max two steps) is the response.
+ex:
+n=5
+y=0 个double steps, n-y=5, 5个座位中选0个位置给double steps的话有 C(5 0)=1 个选择.
+1）1+1+1+1+1
+y=1个double steps, n-y=4, C(4 1)=4
+2) 2+1+1+1
+3) 1+2+1+1
+4) 1+1+2+1
+5) 1+1+1+2
+y=2个double steps, n-y=3, C(3 2)=3
+6) 2+2+1
+7) 2+1+2
+8) 2+1+1
 
 
 https://nrich.maths.org/10871/solution
