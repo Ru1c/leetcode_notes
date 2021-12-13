@@ -470,6 +470,25 @@ r = 7 ^ (3 ^ 3) ^ (4 ^ 4) ^ (5 ^ 5)
 
 # 70. Climbing Stairs
 
+Using combination formula
+Beat almost 100% python submission
+```
+def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        result = 0
+        x = n//2
+        
+        for y in range(x+1):
+            result += math.factorial(n-y)/(math.factorial(y)*math.factorial(n-y-y))
+            
+        return result
+```
+
+
+
 
 another way just for fun:
 
