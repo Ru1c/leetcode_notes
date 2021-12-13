@@ -472,6 +472,17 @@ r = 7 ^ (3 ^ 3) ^ (4 ^ 4) ^ (5 ^ 5)
 
 Using combination formula
 Beat almost 100% python submission
+
+x = n//2 is the max number of double steps you can take
+
+y is the amount of 2 steps you are taking every turn
+n-y is the number of 1 steps you are taking every time
+
+The sum of all the combinations you can take for every different amount of two steps from 0 to x+1 (max two steps) is the response.
+
+
+https://nrich.maths.org/10871/solution
+
 ```
 def climbStairs(self, n):
         """
