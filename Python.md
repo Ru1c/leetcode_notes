@@ -568,3 +568,44 @@ int climbStairs(int n) {
     }
     
 ```
+
+
+# 121. Best Time to Buy and Sell Stock
+
+way1:
+```
+def maxProfit(self, prices: List[int]) -> int:
+
+
+		if len(prices)==0:
+			return 0
+
+		max_profit = 0
+		min_price = prices[0]
+		for i in range(len(prices)-1):
+
+			min_price = min(min_price,prices[i])
+			max_price = max(prices[i+1:])
+			profit = max_price - min_price
+			max_profit = max(max_profit,profit)
+
+		if max_profit <=0:
+			return 0
+		return max_profit
+```
+
+
+way2:
+
+https://stackoverflow.com/questions/34264710/what-is-the-point-of-floatinf-in-python
+
+```
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+    	m, mp = float('inf'), 0
+    	for p in prices:
+    		if p < m: m = p
+    		if p - m > mp: mp = p - m
+    	return mp
+        
+```
