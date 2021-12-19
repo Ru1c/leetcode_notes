@@ -53,3 +53,7 @@ TypeError: unsupported operand type(s) for /: 'list' and 'int'
 ```
 
 Of course, it's possible to do a mathematical operation with a list, but it's much less efficient.
+
+  https://learnpython.com/blog/python-array-vs-list/
+  
+  
