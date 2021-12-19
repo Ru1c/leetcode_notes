@@ -22,3 +22,34 @@ Dummy node 是一个虚拟节点，也可以认为是标杆节点。Dummy node �
 
 快速找出未知长度单链表的中间节点 设置两个指针 *fast、*slow 都指向单链表的头节点，其中*fast的移动速度是*slow的2倍，当*fast指向末尾节点的时候，slow正好就在中间了。
 判断单链表是否有环 利用快慢指针的原理，同样设置两个指针 *fast、*slow 都指向单链表的头节点，其中 *fast的移动速度是*slow的2倍。如果 *fast = NULL，说明该单链表 以 NULL结尾，不是循环链表；如果 *fast = *slow，则快指针追上慢指针，说明该链表是循环链表。
+
+
+
+**Difference between array and list**
+ 
+The differences between lists and arrays in Python:
+
+- Arrays need to be declared. Lists don't, since they are built into Python. In the examples above, you saw that lists are created by simply enclosing a sequence of elements into square brackets. Creating an array, on the other hand, requires a specific function from either the array module (i.e., array.array()) or NumPy package (i.e., numpy.array()). Because of this, lists are used more often than arrays.
+
+- Arrays can store data very compactly and are more efficient for storing large amounts of data.
+
+- Arrays are great for numerical operations; lists cannot directly handle math operations. For example, you can divide each element of an array by the same number with just one line of code. If you try the same with a list, you'll get an error.
+```
+array = np.array([3, 6, 9, 12])
+division = array/3
+print(division)
+print (type(division))
+[1. 2. 3. 4.]
+<class 'numpy.ndarray'>
+list = [3, 6, 9, 12]
+division = list/3
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+ in ()
+      1 list = [3, 6, 9, 12]
+----> 2 division = list/3
+
+TypeError: unsupported operand type(s) for /: 'list' and 'int'
+```
+
+Of course, it's possible to do a mathematical operation with a list, but it's much less efficient.
