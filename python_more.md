@@ -25,7 +25,7 @@ Dummy node 是一个虚拟节点，也可以认为是标杆节点。Dummy node �
 
 
 
-**Difference between array and list**
+3. **Difference between array and list**
  
 The differences between lists and arrays in Python:
 
